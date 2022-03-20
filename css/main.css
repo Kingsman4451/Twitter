@@ -340,6 +340,22 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Segoe-UI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Segoe-UI-Bold.woff") format("woff");
+}
+
 /* GENERAL STYLES */
 * {
   -webkit-box-sizing: border-box;
@@ -349,5 +365,131 @@ template {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 1640px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 15px 90px;
+  background-color: #1D9BF0;
+  border: none;
+  border-radius: 27.5px;
+  cursor: pointer;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 49px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.logo__img {
+  display: block;
+  width: 40px;
+  height: 33px;
+}
+
+/* NAVBAR */
+.navbar__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.navbar__item {
+  margin-bottom: 30px;
+}
+
+.navbar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar__img {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.navbar__text {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.profile {
+  font-weight: 700;
+}
+
+.left-wrapper {
+  height: 100vh;
+}
+
+.left-inner {
+  position: fixed;
+  height: 100%;
+}
+
+.left-inner__bottom {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.left-inner__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.left-inner__about {
+  margin-left: 10px;
+}
+
+.left-inner__name {
+  line-height: 21px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.left-inner__usrname {
+  line-height: 21px;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.left-inner__dots {
+  margin-left: 42px;
 }
