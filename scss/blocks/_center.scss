@@ -1,0 +1,352 @@
+/* CENTER */
+.center {
+  max-width: 910px;
+  border-left: 1px solid #cccc;
+  border-right: 1px solid #cccc;
+  padding-top: 30px;
+}
+.center__header {
+  @include flex(center, flex-start);
+  padding-bottom: 15px;
+  margin-left: 30px;
+}
+.center__header-back {
+  display: inline-block;
+}
+.center__header-person {
+  margin-left: 40px;
+}
+.center__header-name {
+  font-size: $font-size-medium;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 2px;
+}
+.center__header-tweets {
+  line-height: 21px;
+  opacity: 0.6;
+  margin: 0;
+}
+
+
+
+.center__hero-bg {
+  display: block;
+  height: 280px;
+  width: 910px;
+  background-image: url("../../img/profile-bg.jpg");
+  background-repeat: no-repeat;
+}
+.center__hero-img {
+  display: block;
+  position: relative;
+  top: 205px;
+  left: 25px;
+  border-radius: 50%;
+}
+
+
+
+
+.center__hero-content {
+  width: 100%;
+  padding: 0 25px;
+  margin-top: 20px;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.center__hero-button {
+  align-self: flex-end;
+  font-size: $font-size-min;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50px; 
+}
+.center__hero-name {
+  font-size: $font-size-big;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+  margin-top: 21px;
+}
+.center__hero-username {
+  line-height: 21px;
+  opacity: 0.6;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.center__hero-position {
+  font-size: $font-size-min;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 15px;
+  &--link{
+    color: $color-blue;
+    text-decoration: none
+  }
+}
+
+.center__hero-list {
+  width: 100%;
+  @include flex(center, space-between);
+  @include list-no-style;
+  margin-bottom: 15px;
+}
+.center__hero-item {
+  @include flex(center, space-between);
+  &:nth-child(1)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/place.png");
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    content: "";
+  }
+
+  &:nth-child(2)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/link.png");
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    content: "";
+  }
+  &:nth-child(3)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/born.png");
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    content: "";
+  }
+  &:nth-child(4)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/kalendar.png");
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    content: "";
+  }
+}
+.center__hero-text {
+  font-size: $font-size-min;
+  line-height: 24px;
+  opacity: 0.6;
+  margin: 0;
+  
+}
+.center__hero-link {
+  font-size: $font-size-min;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color-blue;
+}
+
+.center__hero-follow {
+  @include list-no-style;
+  @include flex(center, space-between)
+}
+.center__hero-follow-item {
+  margin-right: 30px;
+}
+.center__hero-follow-text {
+  font-size: $font-size-min;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 700;
+  &--thin {
+    font-weight: 400;
+    opacity: 0.6;
+  }
+}
+
+
+
+.center__tweets-menu {
+  @include list-no-style;
+  @include flex(flex-start, space-between);
+  padding: 0 50px;
+  // padding-bottom: 19px;
+  border-bottom: 1px solid #cccc;
+}
+.center__menu-item {
+  &:nth-child(1) {
+    font-weight: 700;
+    &::after {
+      display: block;
+      width: 59px;
+      height: 5px;
+      background: #1DA1F2;
+      border-radius: 4px;
+      margin-top: 17px;
+      content: "";
+    }
+  }
+}
+.center__menu-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: $font-size-min;
+  line-height: 24px;
+  padding-bottom: 15px;
+}
+
+.center__pinned {
+  @include flex(center, flex-start);
+  line-height: 21px;
+  font-weight: 600;
+  color: #536471;
+  margin: 0;
+  margin-left: 50px;
+  margin-top: 15px;
+  &::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    background-image: url("../../img/pin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
+}
+.center__pinned-tweets {
+  @include list-no-style
+}
+.center__pinned-item {
+  @include flex(flex-start, space-between);
+  padding: 0 25px;
+  padding-top: 10px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #ccc;
+}
+.center__tweet-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.center__tweet-content {
+  margin-left: 15px;
+}
+.center__tweet-name {
+  display: inline-block;
+  font-size: $font-size-medium;
+  font-weight: 700;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.center__tweet-span {
+  font-size: $font-size-min;
+  line-height: 24px;
+  opacity: 0.6;
+}
+.center__tweet-text {
+  max-width: 747px;
+  font-size: $font-size-min;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+.center__tweet-list {
+  @include flex(center, space-between);
+  @include list-no-style
+}
+.center__tweet-item {
+  @include flex(center, space-between);
+  line-height: 21px;
+  color: #536471;
+  &:nth-child(1)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("../../img/comment.png");
+    content: "";
+  }
+  &:nth-child(2)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("../../img/retweet.png");
+    content: "";
+  }
+  &:nth-child(3)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("../../img/like.png");
+    content: "";
+  }
+  &:nth-child(4)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("../../img/share.png");
+    content: "";
+  }
+  &:nth-child(5)::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("../../img/statistics.png");
+    content: "";
+  }
+}
+.center__tweet-item-green {
+  @include flex(center, space-between);
+  line-height: 21px;
+  color: #0CB245;
+  font-weight: 600;
+  &::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("../../img/retweet-fill.png");
+    content: "";
+  }
+}
+
+.center__tweet-item-red {
+  @include flex(center, space-between);
+  line-height: 21px;
+  color: #EF1C5C;
+  font-weight: 600;
+  &::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("../../img/like-fill.png");
+    content: "";
+  }
+}
+.center__tweet-dots {
+  display: inline-block;
+  img {
+    display: block;
+    width: 17px;
+    height: 4px;
+  }
+}
+
+.center__tweet-big-img {
+  display: block;
+  width: 679px;
+  height: 453px;
+  margin-bottom: 22px;
+}
