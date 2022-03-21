@@ -33,3 +33,9 @@
 .profile {
   font-weight: 700;
 }
+
+@include breakpoint-down(1630px) {
+  .navbar__text {
+    display: none;
+  }
+}

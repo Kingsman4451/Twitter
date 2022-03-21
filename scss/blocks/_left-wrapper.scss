@@ -5,6 +5,7 @@
   height: 100vh;
   width: 284px;
   padding-top: 30px;
+  padding-right: 50px;
 }
 
 .left-inner {
@@ -42,4 +43,10 @@
 
 .left-inner__dots {
   margin-left: 42px;
+}
+
+
+
+@include breackpoint-down(1630px) {
+  
 }

@@ -1,6 +1,8 @@
+.profile-wrapper {
+  overflow-x: hidden;
+  margin: 0 auto;
+}
 
 .profile-inner {
   @include flex(flex-start, flex-start);
-  flex-direction: row
-
 }
