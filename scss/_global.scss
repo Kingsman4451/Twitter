@@ -1,8 +1,10 @@
 .profile-wrapper {
-  overflow-x: hidden;
-  margin: 0 auto;
+  // margin: 0 auto;
+  position: relative;
+
 }
 
 .profile-inner {
   @include flex(flex-start, flex-start);
+  position: relative;
 }

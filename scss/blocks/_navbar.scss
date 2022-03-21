@@ -1,12 +1,12 @@
 /* NAVBAR */
-.navbar {
-}
 
 .navbar__list {
   @include list-no-style;
   margin-left: 15px;
 }
-
+.navbar__reslist {
+  display: none;
+}
 .navbar__item {
   margin-bottom: 30px;
 }
@@ -34,8 +34,26 @@
   font-weight: 700;
 }
 
-@include breakpoint-down(1630px) {
+@include breakpoint-down(1630px){
   .navbar__text {
     display: none;
+  }
+}
+
+
+
+@include breakpoint-down(630px) {
+  .navbar__reslist {
+    display: block;
+    width: 100%;
+    @include list-no-style;
+    @include flex(center, space-between);
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    background-color: #fff;
+    padding: 15px 0;
+    padding-right: 70px;
+    padding-left: 20px;
   }
 }

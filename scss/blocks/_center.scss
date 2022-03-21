@@ -3,12 +3,18 @@
   max-width: 910px;
   border-left: 1px solid #cccc;
   border-right: 1px solid #cccc;
-  padding-top: 30px;
+  padding-top: 25px;
+  margin-right: auto;
 }
 .center__header {
+  position: sticky;
+  z-index: 200;
+  top: 0;
   @include flex(center, flex-start);
   padding-bottom: 15px;
-  margin-left: 30px;
+  padding-left: 30px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.877);
 }
 .center__header-back {
   display: inline-block;
@@ -34,9 +40,10 @@
 .center__hero-bg {
   display: block;
   height: 280px;
-  width: 910px;
+  width: 905px;
   background-image: url("../../img/profile-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .center__hero-img {
   display: block;
@@ -94,8 +101,10 @@
 .center__hero-list {
   width: 100%;
   @include flex(center, space-between);
+  flex-wrap: wrap;
   @include list-no-style;
   margin-bottom: 15px;
+  gap: 20px
 }
 .center__hero-item {
   @include flex(center, space-between);
@@ -261,50 +270,94 @@
   @include flex(center, space-between);
   @include list-no-style
 }
+.like-fill {
+  display: none;
+  transition: all 0.3s ease
+}
 .center__tweet-item {
   @include flex(center, space-between);
   line-height: 21px;
   color: #536471;
-  &:nth-child(1)::before {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+  cursor: pointer;
+  & > svg {
     margin-right: 10px;
-    background-image: url("../../img/comment.png");
-    content: "";
+    transition: all 0.3s ease;
   }
-  &:nth-child(2)::before {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    background-image: url("../../img/retweet.png");
-    content: "";
+  & > svg path{
+    transition: all 0.3s ease;
   }
-  &:nth-child(3)::before {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    background-image: url("../../img/like.png");
-    content: "";
+  &:nth-child(1){
+    &:hover {
+      color:$color-blue;
+    }
+    &:hover svg {
+      background-color: rgba(29, 160, 242, 0.1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px rgba(29, 160, 242, 0.1);
+    }
+    &:hover svg path {
+      fill: $color-blue
+    }
   }
-  &:nth-child(4)::before {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    background-image: url("../../img/share.png");
-    content: "";
+
+  &:nth-child(2){
+    &:hover {
+      color:#0CB245;
+    }
+    &:hover svg {
+      background-color: rgba(12, 178, 70, 0.1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px rgba(12, 178, 70, 0.1);
+    }
+    &:hover svg path {
+      fill: #0CB245
+    }
   }
-  &:nth-child(5)::before {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    background-image: url("../../img/statistics.png");
-    content: "";
+
+  &:nth-child(3){
+    &:hover {
+      color:#EF1C5C;
+    }
+    &:hover svg {
+      background-color: rgba(239, 28, 91, 0.1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px rgba(239, 28, 91, 0.1);
+    }
+    &:hover svg path {
+      fill: #EF1C5C
+    }
+    &:hover .like-fill{
+      display: block;
+    }
   }
+  &:nth-child(4){
+    &:hover {
+      color:$color-blue;
+    }
+    &:hover svg {
+      background-color: rgba(29, 160, 242, 0.1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px rgba(29, 160, 242, 0.1);
+    }
+    &:hover svg path {
+      fill: $color-blue
+    }
+  }
+
+  &:nth-child(5){
+    &:hover {
+      color:#0CB245;
+    }
+    &:hover svg {
+      background-color: rgba(12, 178, 70, 0.1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px rgba(12, 178, 70, 0.1);
+    }
+    &:hover svg path {
+      fill: #0CB245
+    }
+  }
+  
 }
 .center__tweet-item-green {
   @include flex(center, space-between);
@@ -350,3 +403,53 @@
   height: 453px;
   margin-bottom: 22px;
 }
+
+
+
+
+@include breakpoint-down(1630px) {
+  .center {
+    width: 870px;
+  }
+
+.center__hero-bg {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+}
+
+
+@include breakpoint-down(1300px) {
+  .center {
+    width: 800px;
+  }
+}
+
+@include breakpoint-down(900px) {
+  .center {
+    width: 700px;
+  }
+  .center__tweet-big-img {
+    width: 500px;
+    height: 100%;
+  }
+}
+@include breakpoint-down(750px) {
+  .center {
+    max-width: 625px;
+  }
+
+  .center__tweet-big-img {
+    width: 400px;
+    height: 100%;
+  }
+
+  .center__hero-img {
+    width: 120px;
+    height: 120px;
+    top: 220px;
+  }
+}
+

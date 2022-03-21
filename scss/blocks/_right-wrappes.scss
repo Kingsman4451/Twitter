@@ -1,6 +1,14 @@
 .right {
   padding-top: 20px;
   padding-left: 30px;
+  margin-right: auto;
+}
+.right__serch-box {
+  position: sticky;
+  z-index: 200;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.877);;
 }
 .right__search {
   position: relative;
@@ -21,7 +29,7 @@
   color: #5C6C79;
   padding: 15px 0;
   padding-left: 64px;
-  width: 373px;
+  width: 380px;
   background-color: #EFF3F4;
   margin-bottom: 11px;
   border: none;
@@ -29,6 +37,7 @@
   outline: none;
 }
 .right__images {
+  max-width: 373px;
   @include list-no-style;
   @include flex(center, flex-start);
   flex-wrap: wrap;
@@ -100,6 +109,15 @@
   border-radius: 50px;
   cursor: pointer;
 }
+.right__recommend-resbtn {
+  display: none;
+  color: #ffffff;
+  padding: 10px 12px;
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
 .right__recommend-link {
   text-decoration: none;
   font-size: $font-size-min;
@@ -159,4 +177,32 @@
   line-height: 18px;
   color: $color-blue;
   margin-top: 15px;
+}
+
+
+
+
+
+
+@include breakpoint-down(1370px) {
+  .right__input {
+    width: 300px;
+  }
+  .right__images {
+    display: none;
+  }
+  .right__recommend-btn {
+    display: none;
+  }
+  .right__recommend-resbtn {
+    display: block;
+  }
+}
+
+
+
+@include breakpoint-down(1220px) {
+  .right {
+    display: none;
+  }
 }
