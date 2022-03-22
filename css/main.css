@@ -451,9 +451,6 @@ body {
 }
 
 @media only screen and (max-width: 1630px) {
-  .button {
-    display: none;
-  }
   .res-button {
     display: block;
   }
@@ -567,9 +564,21 @@ body {
     z-index: 100;
     bottom: 0;
     background-color: #fff;
-    padding: 15px 0;
-    padding-right: 70px;
-    padding-left: 20px;
+    padding: 15px 20px;
+  }
+  .navbar__img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar__reslist {
+    padding: 8px 15px;
+  }
+  .navbar__reslist-img {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -679,7 +688,6 @@ body {
   max-width: 910px;
   border-left: 1px solid #cccc;
   border-right: 1px solid #cccc;
-  padding-top: 25px;
   margin-right: auto;
 }
 
@@ -697,6 +705,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 30px;
   -webkit-backdrop-filter: blur(10px);
@@ -717,7 +726,7 @@ body {
 }
 
 .center__header-person {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .center__header-name {
@@ -1309,6 +1318,123 @@ body {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .center__header {
+    padding-left: 15px;
+  }
+  .center__hero-content {
+    padding: 0 10px;
+  }
+  .center__tweet-name {
+    margin-bottom: 0;
+    line-height: 18px;
+  }
+  .center__tweet-span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .center__pinned-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .center__header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+  }
+  .center__header-back img {
+    width: 18px;
+    height: 15px;
+  }
+  .center__header-person {
+    margin-left: 15px;
+  }
+  .center__header-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .center__header-tweets {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .center__hero-bg {
+    height: 200px;
+  }
+  .center__hero-img {
+    width: 100px;
+    height: 100px;
+    top: 150px;
+  }
+  .center__hero-button {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-name {
+    font-size: 22px;
+    margin-top: 0px;
+  }
+  .center__hero-username {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .center__hero-position {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-list {
+    gap: 10px;
+  }
+  .center__hero-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-link {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-follow-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__tweets-menu {
+    padding: 0 10px;
+  }
+  .center__menu-link {
+    font-size: 14px;
+  }
+  .center__pinned-link {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .center__tweet-img {
+    width: 40px;
+    height: 40px;
+  }
+  .center__tweet-name {
+    font-size: 18px;
+  }
+  .center__tweet-span {
+    font-size: 16px;
+  }
+  .center__tweet-text {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  .center__tweet-item {
+    font-size: 14px;
+    margin: 0;
+  }
+  .center__tweet-item svg {
+    width: 20px;
+    margin-right: 5px;
+  }
+}
+
 .home-header {
   width: 100%;
   display: -webkit-box;
@@ -1451,6 +1577,66 @@ body {
 
 .center__home-btn:hover {
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-header {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .center__header-heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .center__heading-link svg {
+    width: 20px;
+  }
+  .center__main {
+    padding: 10px 15px;
+  }
+  .center__main-img {
+    width: 40px;
+    height: 40px;
+  }
+  .center__home-textarea {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .center__home-textarea::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .center__home-textarea:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .center__home-textarea::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .center__home-textarea::placeholder {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .center__main-list {
+    margin-left: 10px;
+    gap: 10px;
+  }
+  .center__main-link svg {
+    width: 20px;
+  }
+  .center__home-btn {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .center__home-textarea {
+    width: 90%;
+  }
 }
 
 .right {

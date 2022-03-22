@@ -3,7 +3,6 @@
   max-width: 910px;
   border-left: 1px solid #cccc;
   border-right: 1px solid #cccc;
-  padding-top: 25px;
   margin-right: auto;
 }
 .center__header {
@@ -11,6 +10,7 @@
   z-index: 200;
   top: 0;
   @include flex(center, flex-start);
+  padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 30px;
   backdrop-filter: blur(10px);
@@ -26,7 +26,7 @@
   }
 }
 .center__header-person {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 .center__header-name {
   font-size: $font-size-medium;
@@ -476,4 +476,125 @@
     top: 220px;
   }
 }
+
+@include breakpoint-down(400px) {
+  .center__header {
+    padding-left: 15px;
+  }
+  .center__hero-content {
+    padding: 0 10px;
+  }
+  .center__tweet-name {
+    margin-bottom: 0;
+    line-height: 18px;
+  }
+  .center__tweet-span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .center__pinned-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@include breakpoint-down(500px) {
+
+  .center__header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+  }
+  .center__header-back {
+    img {
+      width: 18px;
+      height: 15px;
+    }
+  }
+  .center__header-person {
+    margin-left: 15px;
+  }
+  .center__header-name {
+    font-size: $font-size-min;
+    line-height: 24px;
+  }
+  .center__header-tweets {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .center__hero-bg {
+    height: 200px;
+  }
+  .center__hero-img {
+    width: 100px;
+    height: 100px;
+    top: 150px;
+  }
+  .center__hero-button {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-name {
+    font-size: 22px;
+    margin-top: 0px;
+  }
+  .center__hero-username {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .center__hero-position {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-list {
+    gap: 10px;
+  }
+  .center__hero-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-link {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__hero-follow-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .center__tweets-menu {
+    padding: 0 10px;
+  }
+  .center__menu-link {
+    font-size: 14px;
+  }
+  .center__pinned-link {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .center__tweet-img {
+    width: 40px;
+    height: 40px;
+  }
+  .center__tweet-name {
+    font-size: 18px;
+  }
+  .center__tweet-span {
+    font-size: 16px;
+  }
+  .center__tweet-text {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  .center__tweet-item {
+    font-size: 14px;
+    margin: 0;
+    & svg {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+
 

@@ -78,3 +78,56 @@
 .center__home-btn:hover {
   opacity: 0.5;
 }
+
+@include breakpoint-down(500px) {
+  .home-header {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .center__header-heading {
+    font-size: 20px;
+    line-height: 26px;
+
+  }
+  .center__heading-link {
+    svg {
+      width: 20px;
+    }
+  }
+  .center__main {
+    padding: 10px 15px;
+  }
+  .center__main-img {
+    width: 40px;
+    height: 40px;
+  }
+  .center__home-textarea {
+    font-size: 16px;
+    line-height: 15px;
+    &::placeholder {
+      font-size: 18px;
+      line-height: 15px;
+    }
+  }
+  .center__main-list {
+    margin-left: 10px;
+    gap: 10px;
+  }
+  .center__main-link {
+    svg {
+      width: 20px;
+    }
+  }
+  .center__home-btn {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 20px;
+  }
+}
+
+@include breakpoint-down(375px) {
+  .center__home-textarea {
+    width: 90%;
+  }
+}
