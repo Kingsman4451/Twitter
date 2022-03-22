@@ -385,6 +385,19 @@ body {
   position: relative;
 }
 
+.home-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
 .container {
   max-width: 1640px;
   padding-left: 20px;
@@ -576,6 +589,8 @@ body {
 }
 
 .left-inner__bottom {
+  text-decoration: none;
+  color: #000000;
   position: absolute;
   bottom: 20px;
   display: -webkit-box;
@@ -684,13 +699,21 @@ body {
           justify-content: flex-start;
   padding-bottom: 15px;
   padding-left: 30px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.877);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .center__header-back {
   display: inline-block;
+  padding: 10px 8px;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.center__header-back:hover {
+  background-color: rgba(29, 156, 240, 0.1);
 }
 
 .center__header-person {
@@ -1290,6 +1313,150 @@ body {
   }
 }
 
+.home-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.center__header-heading {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.center__main {
+  padding: 15px 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.center__main-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.center__heading-link path {
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+.center__heading-link:hover path {
+  fill: #1D9BF0;
+}
+
+.center__main-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.center__home-textarea {
+  font-size: 22px;
+  line-height: 19px;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-left: 15px;
+  resize: none;
+  display: block;
+  height: 100px;
+  border: none;
+  outline: none;
+}
+
+.center__home-textarea::-webkit-input-placeholder {
+  font-size: 22px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #828282;
+}
+
+.center__home-textarea:-ms-input-placeholder {
+  font-size: 22px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #828282;
+}
+
+.center__home-textarea::-ms-input-placeholder {
+  font-size: 22px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #828282;
+}
+
+.center__home-textarea::placeholder {
+  font-size: 22px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #828282;
+}
+
+.center__main-botom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.center__main-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 75px;
+  gap: 20px;
+}
+
+.center__main-link path {
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+.center__main-link:hover path {
+  fill: #1D9BF0;
+}
+
+.center__home-btn {
+  padding: 16px 30px;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.center__home-btn:hover {
+  opacity: 0.5;
+}
+
 .right {
   padding-top: 20px;
   padding-left: 30px;
@@ -1572,6 +1739,10 @@ body {
   font-weight: 600;
   margin: 0;
   margin-bottom: 3px;
+}
+
+.right__trends-setting {
+  padding-right: 15px;
 }
 
 .right__trends-more {

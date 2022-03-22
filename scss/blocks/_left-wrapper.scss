@@ -13,6 +13,8 @@
 }
 
 .left-inner__bottom {
+  text-decoration: none;
+  color: #000000;
   position: absolute;
   bottom: 20px;
   @include flex(center, flex-start);

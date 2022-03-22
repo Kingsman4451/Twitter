@@ -8,3 +8,8 @@
   @include flex(flex-start, flex-start);
   position: relative;
 }
+
+.home-inner {
+  @include flex(flex-start, flex-start);
+  position: relative;
+}
