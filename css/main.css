@@ -451,6 +451,9 @@ body {
 }
 
 @media only screen and (max-width: 1630px) {
+  .button {
+    display: none;
+  }
   .res-button {
     display: block;
   }
@@ -1570,6 +1573,15 @@ body {
 }
 
 .center__home-btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 15px 90px;
+  background-color: #1D9BF0;
+  border: none;
+  border-radius: 27.5px;
+  cursor: pointer;
   padding: 16px 30px;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;

@@ -72,6 +72,15 @@
   }
 }
 .center__home-btn {
+  font-size: $font-size-min;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 15px 90px;
+  background-color: $color-blue;
+  border: none;
+  border-radius: 27.5px;
+  cursor: pointer;
   padding: 16px 30px;
   transition: opacity 0.3s ease;
 }

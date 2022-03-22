@@ -26,6 +26,9 @@
 }
 
 @include breakpoint-down(1630px) {
+  .button {
+    display: none;
+  }
   .res-button {
     display: block;
   }
