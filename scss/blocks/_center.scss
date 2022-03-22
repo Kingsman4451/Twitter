@@ -73,6 +73,11 @@
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 50px; 
+  transition: background-color 0.3s ease;
+}
+
+.center__hero-button:hover {
+  background-color: rgba(29, 156, 240, 0.1)
 }
 .center__hero-name {
   font-size: $font-size-big;
@@ -184,7 +189,6 @@
   @include list-no-style;
   @include flex(flex-start, space-between);
   padding: 0 50px;
-  // padding-bottom: 19px;
   border-bottom: 1px solid #cccc;
 }
 .center__menu-item {
@@ -192,11 +196,11 @@
     font-weight: 700;
     &::after {
       display: block;
-      width: 59px;
+      width: 100%;
       height: 5px;
       background: #1DA1F2;
       border-radius: 4px;
-      margin-top: 17px;
+      margin-top: 10px;
       content: "";
     }
   }
@@ -207,8 +211,14 @@
   font-size: $font-size-min;
   line-height: 24px;
   padding-bottom: 15px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: background-color 0.3s ease;
 }
-
+.center__menu-link:hover {
+  background-color: rgba(29, 156, 240, 0.1)
+}
 .center__pinned {
   @include flex(center, flex-start);
   line-height: 21px;
@@ -216,7 +226,7 @@
   color: #536471;
   margin: 0;
   margin-left: 50px;
-  margin-top: 15px;
+  padding-top: 15px;
   &::before {
     display: inline-block;
     width: 20px;
@@ -231,12 +241,20 @@
 .center__pinned-tweets {
   @include list-no-style
 }
-.center__pinned-item {
+.center__pinned-link {
+  text-decoration: none;
+  color: #000000;
   @include flex(flex-start, space-between);
   padding: 0 25px;
   padding-top: 10px;
   padding-bottom: 21px;
   border-bottom: 1px solid #ccc;
+}
+.center__pinned-item {
+  transition: background-color 0.3s ease;
+}
+.center__pinned-item:hover {
+  background-color: rgba(29, 156, 240, 0.1);
 }
 .center__tweet-img {
   width: 60px;
@@ -253,6 +271,9 @@
   line-height: 27px;
   margin: 0;
   margin-bottom: 5px;
+}
+.center__tweet-name:hover {
+  text-decoration: underline;
 }
 .center__tweet-span {
   font-size: $font-size-min;

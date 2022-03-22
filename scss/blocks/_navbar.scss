@@ -2,19 +2,30 @@
 
 .navbar__list {
   @include list-no-style;
-  margin-left: 15px;
+  @include flex(flex-start, center);
+  flex-direction: column;
+  // margin-left: 15px;
 }
 .navbar__reslist {
   display: none;
 }
 .navbar__item {
-  margin-bottom: 30px;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .navbar__link {
   @include flex(center, flex-start);
   text-decoration: none;
   color: #000000;
+  padding: 12px 0;
+  padding-left: 12px;
+  padding-right: 15px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+.navbar__item:hover .navbar__link {
+  background-color: rgba(29, 156, 240, 0.1);
 }
 
 .navbar__img {
@@ -30,7 +41,7 @@
   line-height: 24px;
 }
 
-.profile {
+.bold {
   font-weight: 700;
 }
 

@@ -56,9 +56,6 @@
 .right__recommend {
   max-width: 373px;
   padding-top: 20px;
-  padding-left: 15px;
-  padding-bottom: 25px;
-  padding-right: 15px;
   background-color: #F7F9F9;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -66,15 +63,29 @@
 .right__recommend-heading {
   font-size: $font-size-big;
   line-height: 32px;
+  padding-left: 15px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .right__recommend-list {
   @include list-no-style
 }
 .right__recommend-item {
+
+}
+.right__item-link {
+  width: 100%;
   @include flex(center, space-between);
-  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #000000;
+  padding-left: 15px;
+  transition: background-color 0.3s ease;
+}
+.right__item-link:hover {
+  background-color: rgba(29, 156, 240, 0.1)
 }
 .right__recommend-content {
   @include flex(center, flex-start)
@@ -119,17 +130,25 @@
   cursor: pointer;
 }
 .right__recommend-link {
+  display: inline-block;
+  width: 100%;
   text-decoration: none;
   font-size: $font-size-min;
   line-height: 18px;
   color: $color-blue;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.right__recommend-link:hover {
+  background-color: rgba(29, 156, 240, 0.1);
 }
 .right__trends {
   max-width: 373px;
   padding-top: 20px;
-  padding-right: 16px;
-  padding-bottom: 30px;
-  padding-left: 16px;
   background-color: #F7F9F9;
   border-radius: 10px;
 }
@@ -140,6 +159,7 @@
 .right__trends-heading {
   font-size: $font-size-big;
   line-height: 32px;
+  padding-left: 16px;
   margin: 0;
 }
 .right__trends-setting {
@@ -150,9 +170,21 @@
 }
 .right__trends-item {
   @include flex(flex-start,space-between);
-  margin-bottom: 15px;
 }
-
+.right__trend-link {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  width: 100%;
+  @include flex(flex-start,space-between);
+  padding: 8px 0;
+  padding-right: 16px;
+  padding-left: 16px;
+  transition: background-color 0.3s ease;
+}
+.right__trend-link:hover {
+  background-color: rgba(29, 156, 240, 0.1);
+}
 .right__trends-text {
   line-height: 21px;
   color: #393B41;
@@ -167,16 +199,25 @@
   margin-bottom: 3px;
 }
 .right__trends-more {
-  display: inline-block;
+  display: inline;
   margin-top: 17px;
 }
 .right__trends-link {
   display: inline-block;
+  width: 100%;
   text-decoration: none;
   font-size: $font-size-min;
   line-height: 18px;
   color: $color-blue;
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.right__trends-link:hover {
+  background-color: rgba(29, 156, 240, 0.1);
 }
 
 
