@@ -1293,18 +1293,14 @@ body {
     width: 700px;
   }
   .center__tweet-big-img {
-    width: 500px;
+    width: 90%;
     height: 100%;
   }
 }
 
 @media only screen and (max-width: 750px) {
   .center {
-    max-width: 625px;
-  }
-  .center__tweet-big-img {
-    width: 400px;
-    height: 100%;
+    max-width: 630px;
   }
   .center__hero-img {
     width: 120px;

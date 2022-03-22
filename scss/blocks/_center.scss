@@ -459,19 +459,16 @@
     width: 700px;
   }
   .center__tweet-big-img {
-    width: 500px;
+    width: 90%;
     height: 100%;
   }
 }
 @include breakpoint-down(750px) {
   .center {
-    max-width: 625px;
+    max-width: 630px;
   }
 
-  .center__tweet-big-img {
-    width: 400px;
-    height: 100%;
-  }
+
 
   .center__hero-img {
     width: 120px;
