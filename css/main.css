@@ -418,7 +418,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   padding: 15px 90px;
-  background-color: #1D9BF0;
+  background-color: #1d9bf0;
   border: none;
   border-radius: 27.5px;
   cursor: pointer;
@@ -438,7 +438,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #1D9BF0;
+  background-color: #1d9bf0;
   width: 50px;
   height: 50px;
   border: none;
@@ -824,7 +824,7 @@ body {
 }
 
 .center__hero-position--link {
-  color: #1D9BF0;
+  color: #1d9bf0;
   text-decoration: none;
 }
 
@@ -911,7 +911,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-  color: #1D9BF0;
+  color: #1d9bf0;
 }
 
 .center__hero-follow {
@@ -1140,7 +1140,7 @@ body {
 }
 
 .center__tweet-item:nth-child(1):hover {
-  color: #1D9BF0;
+  color: #1d9bf0;
 }
 
 .center__tweet-item:nth-child(1):hover svg {
@@ -1151,7 +1151,7 @@ body {
 }
 
 .center__tweet-item:nth-child(1):hover svg path {
-  fill: #1D9BF0;
+  fill: #1d9bf0;
 }
 
 .center__tweet-item:nth-child(2):hover {
@@ -1189,7 +1189,7 @@ body {
 }
 
 .center__tweet-item:nth-child(4):hover {
-  color: #1D9BF0;
+  color: #1d9bf0;
 }
 
 .center__tweet-item:nth-child(4):hover svg {
@@ -1200,7 +1200,7 @@ body {
 }
 
 .center__tweet-item:nth-child(4):hover svg path {
-  fill: #1D9BF0;
+  fill: #1d9bf0;
 }
 
 .center__tweet-item:nth-child(5):hover {
@@ -1484,7 +1484,7 @@ body {
 }
 
 .center__heading-link:hover path {
-  fill: #1D9BF0;
+  fill: #1d9bf0;
 }
 
 .center__main-img {
@@ -1569,7 +1569,7 @@ body {
 }
 
 .center__main-link:hover path {
-  fill: #1D9BF0;
+  fill: #1d9bf0;
 }
 
 .center__home-btn {
@@ -1578,7 +1578,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   padding: 15px 90px;
-  background-color: #1D9BF0;
+  background-color: #1d9bf0;
   border: none;
   border-radius: 27.5px;
   cursor: pointer;
@@ -1835,7 +1835,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
-  color: #1D9BF0;
+  color: #1d9bf0;
   padding-bottom: 25px;
   padding-top: 10px;
   padding-left: 15px;
@@ -1953,7 +1953,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
-  color: #1D9BF0;
+  color: #1d9bf0;
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 30px;
