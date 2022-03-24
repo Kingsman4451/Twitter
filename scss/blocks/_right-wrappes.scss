@@ -72,9 +72,7 @@
 .right__recommend-list {
   @include list-no-style
 }
-.right__recommend-item {
 
-}
 .right__item-link {
   width: 100%;
   @include flex(center, space-between);
